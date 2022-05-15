@@ -1,5 +1,13 @@
 # NYC_Licensed_Dogs_Analysis
-Final Capstone Project: Analysis of Active Dog Licenses in New York City, new York
+
+## Final Capstone Project Topic: 
+Analysis of Active Dog Licenses in New York City, new York
+
+## Description of the communication protocols:
+
+## Reason of selected topic:
+
+## Description of the source of the data:
 
 ## Objective Questions:
 * Do we predict an increase in licensed dogs for the following year? 
