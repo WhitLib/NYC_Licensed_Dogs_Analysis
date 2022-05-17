@@ -11,7 +11,7 @@
 
 All dog owners who reside in New York City are required by law to license their dogs. For our final capstone project, we chose to conduct an analysis of 2019 active dog licenses in NYC. We chose this topic for a number of reasons including but not limited to: 
 
-1. The data provided via Kaggle and NYC Open Data was for the year preceding the COVID-19 pandemic; we were interested in determining whether or not there was a surge in active dog licenses once shelter-in-place protocols were in place
+1. The data provided via Kaggle and NYC Open Data offer datasets for the year preceding, the year of, and the year after the COVID-19 pandemic; we were interested in determining whether or not there was a surge in active dog licenses once shelter-in-place protocols were in place
 
 2. Opportunities to analyze multiple variables including animal breed, name, gender, birth month, owner's borough of residence, and zip code were available
 
