@@ -19,7 +19,7 @@ All dog owners who reside in New York City are required by law to license their 
 
 ### 1.1 Communication Protocols
 
-To collaborate and discuss our roles and responsibilities, objectives and progress, our team has an ongoing check-in every **Saturday** evening. When we are not meeting and require quick interactions, we communicate via Slack.
+To collaborate and discuss our roles and responsibilities, objectives and progress, our team has an ongoing check-in every **Saturday** evening. When we are not meeting and require quick interactions, we communicate via a team Slack channel.
 
 ## 2 Data Sources
 
