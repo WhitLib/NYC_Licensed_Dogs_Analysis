@@ -1,6 +1,8 @@
 # NYC_Licensed_Dogs_Analysis
 **Topic:** Analysis of Active Dog Licenses in New York City, new York
 
+[Google Slides Presentation](https://docs.google.com/presentation/d/1T5ktLkxGPgQKgACKow3VYsl-tQwlOcVyk1kZDvsj7yg/edit?usp=sharing)
+
 ### Table of Contents
 - [1 Project Overview](#1-project-overview)
   - [1.1 Communication Protocols](#11-communication-protocols)
