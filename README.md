@@ -3,7 +3,7 @@
 
 [Google Slides Presentation](https://docs.google.com/presentation/d/1T5ktLkxGPgQKgACKow3VYsl-tQwlOcVyk1kZDvsj7yg/edit?usp=sharing)
 
-[Tableau Story](https://public.tableau.com/shared/THJF4F2MK?:display_count=n&:origin=viz_share_link) Contains interactive images we will use for our presentation and to answer some of our objective questions.
+[Tableau Story](https://public.tableau.com/views/NYCLicensedDogsAnalysis/NYCLicensedDogsAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link) Contains interactive images we will use for our presentation and to answer some of our objective questions.
 
 ### Table of Contents
 - [1 Project Overview](#1-project-overview)
