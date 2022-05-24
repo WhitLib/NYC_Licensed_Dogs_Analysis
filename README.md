@@ -2,6 +2,7 @@
 **Topic:** Analysis of Active Dog Licenses in New York City, new York
 
 [Google Slides Presentation](https://docs.google.com/presentation/d/1T5ktLkxGPgQKgACKow3VYsl-tQwlOcVyk1kZDvsj7yg/edit?usp=sharing)
+
 [Tableau Story](https://public.tableau.com/authoring/NYCLicensedDogsAnalysis/NYCLicensedDogsAnalysis#1) Contains interactive images we will use for our presentation and to answer some of our objective questions.
 
 ### Table of Contents
