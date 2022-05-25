@@ -44,7 +44,6 @@ This dataset was derived from the [US Census Bureau](https://www.census.gov/), c
 
 The preliminary research questions that we are looking to answer are: 
 
-* Do we predict an increase in licensed dogs for the following year (2020)? 
 * Is there a correlation between location (borough) and dog breed? 
 * Can we predict dog breed or dog name for each neighborhood?
 * Do more dogs tend to be adopted in more affluent boroughs/census tracts? 
