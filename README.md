@@ -13,9 +13,9 @@
 
 ## 1 Project Overview
 
-All dog owners who reside in New York City are required by law to license their dogs. For our final capstone project, we chose to conduct an analysis of 2019 active dog licenses in NYC. We chose this topic for a number of reasons including but not limited to: 
+All dog owners who reside in New York City are required by law to license their dogs. For our final capstone project, we chose to conduct an analysis of 2014-2016 active dog licenses in NYC. We chose this topic for a number of reasons including but not limited to: 
 
-1. The data provided via Kaggle and NYC Open Data offer datasets for the year preceding, the year of, and the year after the COVID-19 pandemic; we were interested in determining whether or not there was a surge in active dog licenses once shelter-in-place protocols were in place
+1. The data provided via Kaggle and NYC Open Data offer data for the 5 boroughs of New York City - a large sample size of the highly populated metropolis with residental income that ranges from below poverty to highly affluent
 
 2. Opportunities to analyze multiple variables including animal breed, name, gender, birth month, owner's borough of residence, and zip code were available
 
@@ -27,7 +27,7 @@ To collaborate and discuss our roles and responsibilities, objectives and progre
 
 ## 2 Data Sources
 
-The [`NYC_Dog_Licensing_Dataset`](https://www.kaggle.com/datasets/smithaachar/nyc-dog-licensing-clean?resource=download) is a 13.68MB csv with 122K rows and 15 columns derived from Kaggle. The original `NYC_Dog_Licensing_Dataset` is an [NYC Open Data](https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp) asset that contains all active dog licenses for NYC residents. The data is sourced from the [DOHMH Dog Licensing System](https://a816-healthpsi.nyc.gov/DogLicense), where owners can apply for and renew dog licenses. The data is available for various years, but we focused solely on 2019 data. 
+The [`NYC_Dog_Licensing_Dataset`](https://www.kaggle.com/datasets/smithaachar/nyc-dog-licensing-clean?resource=download) is a 13.68MB csv with 122K rows and 15 columns derived from Kaggle. The original `NYC_Dog_Licensing_Dataset` is an [NYC Open Data](https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp) asset that contains all active dog licenses for NYC residents. The data is sourced from the [DOHMH Dog Licensing System](https://a816-healthpsi.nyc.gov/DogLicense), where owners can apply for and renew dog licenses. The data is available for various years, but we focused on data from 2014-2016 - similar to the data available on Kaggle. 
 
 Each record represented in the dataset is a unique dog license that was active during the year. Each record was not necessarily a unique record, since a license that was renewed during the year resulted in a separate record of an active license period. However, each record stood as a unique license period for the dog over the course of the yearlong time frame.
 
