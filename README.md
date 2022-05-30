@@ -54,5 +54,9 @@ The preliminary research questions that we are looking to answer are:
 ## 4 Machine Learning Model
 
 Using the NYC dog licensing data from kaggle, the data was preprocessed by first examining the total unique values for each category as well as the number of NaN values present in the dataset. Rows with NaN values were removed from the model, as there was sufficient data (>100,000 values) to work with. Dogs with names listed as "Unknown" or "Name not provided" were removed, as this was not useful for our model and only accounted for <1,000 instances. Dogs with their gender not listed were also removed, as this would add another category to the AnimalGender column, and did not account for that many instances.
+
 Two columns were manually encoded: "AnimalGender" and "Borough"; this was done to keep track of which integer represented which category. The remaining object categories ("AnimalName", "BreedName", and "NTA") were encoded using the LabelEncoder module from sklearn.
-The following columns were used as features: "AnimalName", "BreedName", "AnimalGender", "AnimalBirthMonth", "LicenseIssuedDate", and "LicenseExpiredDate". "Borough" was used as the target variable.
+
+The following columns were used as features: "AnimalName", "BreedName", "AnimalGender", "AnimalBirthMonth", "LicenseIssuedDate", and "LicenseExpiredDate". "Borough" was used as the target variable. The machine learning model utilized the RandomForest module. Data was split into testing and training data using train_test_split(). The intial model had an accuracy score of 33% for all five boroughs. Overall, the model had the highest precision for Manhattan at 40%, and thw lowest precision for Staten Island at 13%. This could be explained by there being more licensed dogs in Manhattan (42,607) versus Staten Island (11,155).
+
+For future analysis, it is recommended to try a different machine learing model other than random forests.
