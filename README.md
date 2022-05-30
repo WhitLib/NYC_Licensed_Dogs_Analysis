@@ -5,11 +5,14 @@
 
 [Tableau Story](https://public.tableau.com/views/NYCLicensedDogsAnalysis/NYCLicensedDogsStory?:language=en-US&:display_count=n&:origin=viz_share_link) Contains interactive images we will use for our presentation and to answer some of our objective questions.
 
+[Dashboard Storyboard](https://docs.google.com/presentation/d/1ZWdrP-9rqCWh0csM74Ab-9ThCyZBTmxM-Bc7ddR_8fY/edit?usp=sharing) Contains storyboard for the presentation dashboard, including which tools will be used and what interactive elements will be present.
+
 ### Table of Contents
 - [1 Project Overview](#1-project-overview)
   - [1.1 Communication Protocols](#11-communication-protocols)
 - [2 Data Sources](#2-data-sources)
 - [3 Research Questions](#3-research-questions)
+- [4 Machine Learning Model](#4-machine-learning-model)
 
 ## 1 Project Overview
 
@@ -47,3 +50,9 @@ The preliminary research questions that we are looking to answer are:
 * Is there a correlation between location (borough) and dog breed? 
 * Can we predict dog breed or dog name for each neighborhood?
 * Do more dogs tend to be adopted in more affluent boroughs/census tracts? 
+
+## 4 Machine Learning Model
+
+Using the NYC dog licensing data from kaggle, the data was preprocessed by first examining the total unique values for each category as well as the number of NaN values present in the dataset. Rows with NaN values were removed from the model, as there was sufficient data (>100,000 values) to work with. Dogs with names listed as "Unknown" or "Name not provided" were removed, as this was not useful for our model and only accounted for <1,000 instances. Dogs with their gender not listed were also removed, as this would add another category to the AnimalGender column, and did not account for that many instances.
+Two columns were manually encoded: "AnimalGender" and "Borough"; this was done to keep track of which integer represented which category. The remaining object categories ("AnimalName", "BreedName", and "NTA") were encoded using the LabelEncoder module from sklearn.
+The following columns were used as features: "AnimalName", "BreedName", "AnimalGender", "AnimalBirthMonth", "LicenseIssuedDate", and "LicenseExpiredDate". "Borough" was used as the target variable.
