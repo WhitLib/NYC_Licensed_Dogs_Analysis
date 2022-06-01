@@ -7,8 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NYC Dogs</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
   <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://online.tableau.com/javascripts/api/tableau-2.9.0.min.js"></script>
 </head>
 
 <body>
@@ -20,10 +21,12 @@
     <!--add description paragraph-->
     <div class="row">
       <div class="col-md-12">
-        <h2>Can you spot the dogs?</h2>
-        <p>Welcome to our project page! This analysis takes NYC dog license data from the years 2013?-2019 and analyzes trends in dog names, dog locations, and dog breed. 
-          In addition, we attempt to see if there is a correlation between income and dog ownership, and whether dog ownership is increasing or decreasing. 
-          Take a look around at the visualizations. Enjoy your stay!</p>
+        <h2>Where are all the dogs?</h2>
+        <p>Welcome to our project page! This analysis takes New York City dog licensing data from the years 2013-2016 and analyzes trends in dog names, dog locations, and dog breed. 
+          In addition, use the visualization below to see the relationship between income and dog ownership. To see further analysis, use the dropdown menu to select a visualization.</p>
+          
+          <p>Navigate to the /dashboard page to view the machine learning model that predicts dog location.</p>
+          <p>Take a look around at the visualizations. Enjoy your stay!</p>
       </div>
     </div>
     <div class="row">
@@ -32,30 +35,24 @@
         <div class='tableauPlaceholder' id='viz1653362353438' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FG&#47;FGHY78JHR&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;FGHY78JHR' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FG&#47;FGHY78JHR&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1653362353438');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
       </div>
       <select id="selDataset">
-        <option value="Bronx">bronx</option>
-        <option value="Brooklyn">brooklyn</option>
-        <option value="Manhattan">manhattan</option>
-        <option value="Queens">queens</option>
-        <option value="Staten Island">statenIsland</option>
+        <option value="DogPopBorough">Dog Population by Borough</option>
+        <option value="dogNamesPer">Top 3 Dog Names per Borough</option>
+        <option value="dogBreedsPer">Top 5 Dog Breeds per Borough</option>
+        <option value="topNames">Top Dog Names</option>
+        <option value="topBreeds">Top Dog Breeds</option>
       </select>
       <div class="col-md-4">
-        <small>Top dog names will go here</small>
-        <div class='tableauPlaceholder' id='viz1653536762449' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;9K&#47;9KYHQTM7S&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;9KYHQTM7S' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;9K&#47;9KYHQTM7S&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1653536762449');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='1014px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <small>Dropdown viz will go here</small>
+        <div id="vizContainer" style="width:800px; height:700px;"></div>
       </div>
 
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <small>top dog breeds will go here</small>
-        <div class='tableauPlaceholder' id='viz1653536791170' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;89&#47;894D7FDZT&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;894D7FDZT' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;89&#47;894D7FDZT&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1653536791170');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='1014px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      </div>
     </div>
   </div>
   <div class="wrapper">
     <h4>Belen Lopez, Whitney Libunao, and Alex Statley</h4>
   </div>
 
-    <script=""></script>
+<script src="static/js/charts.js"></script>
 </body>
 
 
