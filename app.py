@@ -22,8 +22,8 @@ dogs_enc_df = pd.read_csv(file_path)
 #define the features
 #NOTE: many of the features directly relate to where the dog is from (ie ZIP code, districts, etc), I've removed these to make it harder for the model to guess
 X = dogs_enc_df.copy()
-X = X[["AnimalName", "BreedName", "Borough_enc", "ZipCode", "AnimalBirthMonth", "LicenseIssuedDate", "LicenseExpiredDate"]]
-y = dogs_enc_df["gender_enc"]
+X = X[["AnimalName", "BreedName","AnimalBirthMonth", "LicenseIssuedDate", "gender_enc"]]
+y = dogs_enc_df["Borough_enc"]
 
 #test train split
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
@@ -37,7 +37,7 @@ explainer = ClassifierExplainer(
                 model, X_test, y_test,
                 # optional:
                 #cats=['AnimalName', 'BreedName', 'Borough_enc'],
-                labels=['Male', 'Female']
+                labels=['Bronx', 'Brooklyn', 'Manhattan', 'Queens', 'Staten Island']
 )
 
 db = ExplainerDashboard(explainer, title="NYC_Dogs_Dash",
