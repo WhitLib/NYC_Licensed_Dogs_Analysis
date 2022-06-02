@@ -1,0 +1,11 @@
+body {
+    color: #222222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jumbotron {
+    background-image: url("../images/dogs.jpg");
+    background-size: contain;
+    text-align: center;
+    color: #bbbbbb
+}
