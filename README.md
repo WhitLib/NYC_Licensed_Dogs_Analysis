@@ -59,4 +59,28 @@ Two columns were manually encoded: "AnimalGender" and "Borough"; this was done t
 
 The following columns were used as features: "AnimalName", "BreedName", "AnimalGender", "AnimalBirthMonth", "LicenseIssuedDate", and "LicenseExpiredDate". "Borough" was used as the target variable. The machine learning model utilized the RandomForest module. Data was split into testing and training data using train_test_split(). The intial model had an accuracy score of 33% for all five boroughs. Overall, the model had the highest precision for Manhattan at 40%, and thw lowest precision for Staten Island at 13%. This could be explained by there being more licensed dogs in Manhattan (42,607) versus Staten Island (11,155).
 
-For future analysis, it is recommended to try a different machine learing model other than random forests.
+The five supervised machine learning models we tried were decision tree, random forest, easy ensemble AdaBoost, gradient boosted tree, and SVM. SVM was run in google collab notebooks because the processing power it needed to run exceeded what the system processor was capable of. All the models performed in a similar manner with a very low accuracy score. The gradient boosted tree had the highest accuracy score at 35%, but the random forest model integrated better with the explainerdashboard module, so that is why it was chosen for the dashboard.
+
+Summary:
+Decision Tree:
+  - Avreage Accuracy: 27%
+  - Average Precision: 28%
+  - Average Recall: 27%
+Random Forest:
+  - Avreage Accuracy: 33%
+  - Average Precision: 29%
+  - Average Recall: 33%
+Easy Ensemble:
+  - Avreage Accuracy: 26%
+  - Average Precision: 29%
+  - Average Recall: 25%
+Gradient Boosted Tree:
+  - Avreage Accuracy: 34%
+  - Average Precision: 30%
+  - Average Recall: 34%
+SVM:
+  - Avreage Accuracy: 35%
+  - Average Precision: 12%
+  - Average Recall: 35%
+
+This analysis shows that there is very little correlation between dog name, dog breed, dog age, registration date, and borough. Since the top five most popular dog names and dog breeds were very similar across all boroughs, the analysis might be improved by removing these data points.
