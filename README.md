@@ -62,22 +62,27 @@ The following columns were used as features: "AnimalName", "BreedName", "AnimalG
 The five supervised machine learning models we tried were decision tree, random forest, easy ensemble AdaBoost, gradient boosted tree, and SVM. SVM was run in google collab notebooks because the processing power it needed to run exceeded what the system processor was capable of. All the models performed in a similar manner with a very low accuracy score. The gradient boosted tree had the highest accuracy score at 35%, but the random forest model integrated better with the explainerdashboard module, so that is why it was chosen for the dashboard.
 
 Summary:
+
 Decision Tree:
   - Avreage Accuracy: 27%
   - Average Precision: 28%
   - Average Recall: 27%
+
 Random Forest:
   - Avreage Accuracy: 33%
   - Average Precision: 29%
   - Average Recall: 33%
+
 Easy Ensemble:
   - Avreage Accuracy: 26%
   - Average Precision: 29%
   - Average Recall: 25%
+
 Gradient Boosted Tree:
   - Avreage Accuracy: 34%
   - Average Precision: 30%
   - Average Recall: 34%
+
 SVM:
   - Avreage Accuracy: 35%
   - Average Precision: 12%
