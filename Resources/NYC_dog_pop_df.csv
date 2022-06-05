@@ -1,6 +1,6 @@
-UID,borough,dog_population
-0,Bronx,12309
-1,Brooklyn,28893
-2,Manhattan,41288
-3,Queens,24047
-4,Staten Island,10852
+borough,dog_population
+Bronx,12328
+Brooklyn,28950
+Manhattan,41288
+Queens,41327
+Staten Island,10865
