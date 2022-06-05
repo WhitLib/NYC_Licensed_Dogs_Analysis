@@ -1,28 +1,32 @@
 -- Drop unnecessary/erroneous tables
-DROP TABLE avg_hi_by_censustract_boroughs;
+DROP TABLE borough_dog_name_totals;
 
 -- Create a table of cleaned NYC dog data with only required columns
 CREATE TABLE NYC_dog_data(
 UID INT NOT NULL PRIMARY KEY,
 Borough VARCHAR(30) NOT NULL,
+Name VARCHAR(30),
 Gender VARCHAR(2) NOT NULL,
 BirthMonth INT NOT NULL,
 BreedName VARCHAR(100) NOT NULL,
-CensusTract FLOAT
+CensusTract FLOAT,
+IssueDate DATE NOT NULL,
+ExpirationDate DATE NOT NULL
 );
-
 
 -- View the data
 SELECT * FROM NYC_dog_data;
 
--- Create a table of dog populations in each of the 5 NYC boroughs
+-- Create a query of dog populations in each of the 5 NYC boroughs
 CREATE TABLE borough_dog_pop (
 borough VARCHAR(30) NOT NULL PRIMARY KEY,
 dog_population INTEGER NOT NULL
 );
 
--- View the data
-SELECT * FROM borough_dog_pop;
+-- Create a query to view the number of adopted dogs by borough
+SELECT borough, COUNT(UID)
+FROM NYC_dog_data
+GROUP BY borough
 
 -- Create a table of dog genders in each borough
 CREATE TABLE borough_dog_genders (
@@ -94,6 +98,40 @@ ORDER BY borough, birthmonth asc;
 -- View the data
 SELECT * FROM birth_month_totals;
 
+-- Create a table of adopted dog names
+CREATE TABLE borough_dog_names (
+UID INT NOT NULL PRIMARY KEY,
+Borough VARCHAR(30) NOT NULL,
+Name VARCHAR(30)
+);
+
+-- View the data
+SELECT * FROM borough_dog_names;
+
+-- Create a query to find the top dog names overall
+SELECT name, COUNT(name)
+-- INTO dog_name_totals
+FROM borough_dog_names
+GROUP BY name
+ORDER BY count desc;
+
+-- Create a query to find the most popular borough dog names
+SELECT borough, name, COUNT(name) 
+-- INTO borough_dog_name_totals
+FROM borough_dog_names
+GROUP BY borough, name
+ORDER BY count desc
+
+-- Create a table of license issue and expiration dates
+CREATE TABLE borough_license_dates (
+UID INT NOT NULL PRIMARY KEY,
+Borough VARCHAR(30) NOT NULL,
+IssueDate Date NOT NULL,
+ExpirationDate Date NOT NULL
+);
+
+-- View the data
+SELECT * FROM borough_license_dates;
 
 -- Create a table of average income by year for 2014-2016
 CREATE TABLE income_by_year_by_census_tract (
@@ -118,7 +156,6 @@ ORDER BY censustract
 
 -- View the data
 SELECT * FROM joined_income_dog_data;
-
 
 -- Create queries of the number of adoptions, the minimum and maximum household income per borough
 SELECT COUNT(UID),MIN(averagehi), MAX(averagehi)
