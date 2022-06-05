@@ -1,0 +1,61 @@
+borough,birthmonth,count
+Bronx,1,2346
+Bronx,2,827
+Bronx,3,916
+Bronx,4,915
+Bronx,5,873
+Bronx,6,944
+Bronx,7,887
+Bronx,8,927
+Bronx,9,900
+Bronx,10,966
+Bronx,11,871
+Bronx,12,956
+Brooklyn,1,6179
+Brooklyn,2,1983
+Brooklyn,3,2084
+Brooklyn,4,2179
+Brooklyn,5,2155
+Brooklyn,6,2174
+Brooklyn,7,2045
+Brooklyn,8,2061
+Brooklyn,9,2052
+Brooklyn,10,2186
+Brooklyn,11,1888
+Brooklyn,12,1964
+Manhattan,1,8390
+Manhattan,2,2927
+Manhattan,3,3089
+Manhattan,4,3196
+Manhattan,5,3043
+Manhattan,6,3212
+Manhattan,7,3001
+Manhattan,8,2881
+Manhattan,9,2773
+Manhattan,10,3033
+Manhattan,11,2859
+Manhattan,12,2923
+Queens,1,5345
+Queens,2,1650
+Queens,3,1796
+Queens,4,1779
+Queens,5,1753
+Queens,6,1855
+Queens,7,1851
+Queens,8,1677
+Queens,9,1550
+Queens,10,1747
+Queens,11,1616
+Queens,12,1535
+Staten Island,1,3156
+Staten Island,2,624
+Staten Island,3,680
+Staten Island,4,656
+Staten Island,5,708
+Staten Island,6,761
+Staten Island,7,728
+Staten Island,8,742
+Staten Island,9,656
+Staten Island,10,792
+Staten Island,11,723
+Staten Island,12,639
