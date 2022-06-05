@@ -89,3 +89,5 @@ SVM:
   - Average Recall: 35%
 
 This analysis shows that there is very little correlation between dog name, dog breed, dog age, registration date, and borough. Since the top five most popular dog names and dog breeds were very similar across all boroughs, the analysis might be improved by removing these data points.
+
+## 5 Recommendations & Further Research
