@@ -1,15 +1,14 @@
 # NYC_Licensed_Dogs_Analysis
-**Topic:** Analysis of Active Dog Licenses in New York City, new York
+**Topic:** Analysis of Active Dog Licenses in New York City, New York
 
 [Google Slides Presentation](https://docs.google.com/presentation/d/1T5ktLkxGPgQKgACKow3VYsl-tQwlOcVyk1kZDvsj7yg/edit?usp=sharing)
 
-[Tableau Story](https://public.tableau.com/views/NYCLicensedDogsAnalysis/NYCLicensedDogsStory?:language=en-US&:display_count=n&:origin=viz_share_link) Contains interactive images we will use for our presentation and to answer some of our objective questions.
+[Tableau Story](https://public.tableau.com/views/NYCLicensedDogsAnalysis/NYCLicensedDogsStory?:language=en-US&:display_count=n&:origin=viz_share_link) Contains interactive images we will use for our presentation to answer some of our objective questions.
 
 [Dashboard Storyboard](https://docs.google.com/presentation/d/1ZWdrP-9rqCWh0csM74Ab-9ThCyZBTmxM-Bc7ddR_8fY/edit?usp=sharing) Contains storyboard for the presentation dashboard, including which tools will be used and what interactive elements will be present.
 
 ### Table of Contents
 - [1 Project Overview](#1-project-overview)
-  - [1.1 Communication Protocols](#11-communication-protocols)
 - [2 Data Sources](#2-data-sources)
 - [3 Research Questions](#3-research-questions)
 - [4 Machine Learning Model](#4-machine-learning-model)
@@ -23,10 +22,6 @@ All dog owners who reside in New York City are required by law to license their 
 2. Opportunities to analyze multiple variables including animal breed, name, gender, birth month, owner's borough of residence, and zip code were available
 
 3. Who doesn't love dogs???
-
-### 1.1 Communication Protocols
-
-To collaborate and discuss our roles and responsibilities, objectives and progress, our team has an ongoing check-in every **Saturday** evening. When we are not meeting and require quick interactions, we communicate via a team Slack channel.
 
 ## 2 Data Sources
 
@@ -64,30 +59,32 @@ The five supervised machine learning models we tried were decision tree, random 
 Summary:
 
 Decision Tree:
-  - Avreage Accuracy: 27%
+  - Average Accuracy: 27%
   - Average Precision: 28%
   - Average Recall: 27%
 
 Random Forest:
-  - Avreage Accuracy: 33%
+  - Average Accuracy: 33%
   - Average Precision: 29%
   - Average Recall: 33%
 
 Easy Ensemble:
-  - Avreage Accuracy: 26%
+  - Average Accuracy: 26%
   - Average Precision: 29%
   - Average Recall: 25%
 
 Gradient Boosted Tree:
-  - Avreage Accuracy: 34%
+  - Average Accuracy: 34%
   - Average Precision: 30%
   - Average Recall: 34%
 
 SVM:
-  - Avreage Accuracy: 35%
+  - Average Accuracy: 35%
   - Average Precision: 12%
   - Average Recall: 35%
 
 This analysis shows that there is very little correlation between dog name, dog breed, dog age, registration date, and borough. Since the top five most popular dog names and dog breeds were very similar across all boroughs, the analysis might be improved by removing these data points.
 
 ## 5 Recommendations & Further Research
+
+Future analysis include analyzing the dataset to see if there is an increase in dog registration over more current years. A larger year span might give us more insight to see if there is a correlation between dog name, breed, age, registration date, owner income, and borough. 
