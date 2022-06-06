@@ -86,9 +86,13 @@ SVM:
 
 This analysis shows that there is very little correlation between dog name, dog breed, dog age, registration date, and borough. Since the top five most popular dog names and dog breeds were very similar across all boroughs, the analysis might be improved by removing these data points.
 
-## Visualizations
+## 5 Results & Visualizations
 
 
-## 5 Recommendations & Further Research
+## 6 Summary & Recommendations 
+
+The following recommendations would be made for opportunities of future research: 
+
+[ ] Analyze Dog Licensing Data for the years leading up to the COVID-19 pandemic (2018-2019), as well as 2020.
 
 Future analysis include analyzing the dataset to see if there is an increase in dog registration over more current years. A larger year span might give us more insight to see if there is a correlation between dog name, breed, age, registration date, owner income, and borough. 
