@@ -12,6 +12,8 @@
 - [2 Data Sources](#2-data-sources)
 - [3 Research Questions](#3-research-questions)
 - [4 Machine Learning Model](#4-machine-learning-model)
+- [5 Results and Visualizations](#5-results-and-visualizations)
+- [6 Summary and Recommendations](#6-summary-and-recommendations)
 
 ## 1 Project Overview
 
@@ -86,13 +88,32 @@ SVM:
 
 This analysis shows that there is very little correlation between dog name, dog breed, dog age, registration date, and borough. Since the top five most popular dog names and dog breeds were very similar across all boroughs, the analysis might be improved by removing these data points.
 
-## 5 Results & Visualizations
+## 5 Results and Visualizations
 
+**Dog Population by Borough**
 
-## 6 Summary & Recommendations 
+The image below derived from our Tableau Story shows that out of the 5 boroughs, Manhattan has the most licensed dogs at exactly 41,327 dogs, following that is Brooklyn at 28,950, then Queens at 24,154, Bronx at 12,328, and last is Staten Island at 10,865. 
+
+![This is an image](https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Dog_Population_by_Borough.png)
+
+**Top 5 Dog Breeds per Borough**
+
+Per our analysis, we are able to see below that the top 5 dog breeds per borough are Yorkshire Terriers,  Shih Tzus, Maltese, Labrador Retrievers,  and Chihuahuas. Out of those Yorkshire Terriers are the most popular dogs in every borough besides Staten Island where Shih Tzus are the most owned. 
+
+![This is an image](https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Top_5_Dog_Breeds.png)
+
+**Top 15 Dog Names and Top 3 Dog Names per Borough**
+
+The first image below is a chart of the Top 15 Dog Names in NYC. Bella comes at number one with 1,360 dogs with that name, followed by Max at 1,285, and Charlie at 984. The following chart is those Top 3 Dog Names per Borough which shows that Bella is the number one picked name in Bronx, Brooklyn, and Staten Island. Charlie is the top name in Manhattan, and Max is the top name in Queens. 
+
+![This is an image](https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Top_15_Dog_Names.png)
+
+![This is an image](https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Top_3_Dog_Names_per_Borough.png)
+
+## 6 Summary and Recommendations 
 
 The following recommendations would be made for opportunities of future research: 
 
-[ ] Analyze Dog Licensing Data for the years leading up to the COVID-19 pandemic (2018-2019), as well as 2020.
+Analyze Dog Licensing Data for the years leading up to the COVID-19 pandemic (2018-2019), as well as 2020.
 
-Future analysis include analyzing the dataset to see if there is an increase in dog registration over more current years. A larger year span might give us more insight to see if there is a correlation between dog name, breed, age, registration date, owner income, and borough. 
+Future analysis include analyzing the dataset to see if there is an increase in dog registration over more current years. A larger year span might give us additional insight to see if there is a correlation between dog name, breed, age, registration date, owner income, and borough. 
