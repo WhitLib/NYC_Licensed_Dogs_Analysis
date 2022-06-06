@@ -1,0 +1,19 @@
+body {
+    color: #222222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("..images/paw-prints.jpg");
+    background-position: contain;
+    background-color: silver;
+}
+
+.jumbotron {
+    background-image: url("../images/dogs.jpg");
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000;
+    background-size: contain;
+    text-align: center;
+    color: #bbbbbb
+}
