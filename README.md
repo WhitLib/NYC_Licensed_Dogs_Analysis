@@ -94,7 +94,7 @@ This analysis shows that there is very little correlation between dog name, dog 
 
 The image below derived from our Tableau Story shows that out of the 5 boroughs, Manhattan has the most licensed dogs at exactly 41,327 dogs, following that is Brooklyn at 28,950, then Queens at 24,154, Bronx at 12,328, and last is Staten Island at 10,865. 
 
-![This is an image](https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Dog_Population_by_Borough.png)
+<p align="center"><img src="https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Dog_Population_by_Borough.png"></p>
 
 Results derived from our SQL database support these findings and are depicted in the table below:
 
@@ -110,7 +110,7 @@ Per our analysis, we are able to see below that the top 5 dog breeds per borough
 
 Queries created via our SQL database support this visualization. Totals for the most popular dog breeds adopted within the 5 boroughs of NYC between 2014 and 2016 are shown in the table below: 
 
-<img width="229" alt="image" src="https://user-images.githubusercontent.com/95978097/172276183-5fad8383-a674-4c82-a13e-ea175c3dcaec.png">
+<p align="center"><img width="229" alt="image" src="https://user-images.githubusercontent.com/95978097/172276183-5fad8383-a674-4c82-a13e-ea175c3dcaec.png"></p>
 
 Unlike the tableau visualization (that only depict actual breed names), however, the table actually derived from our SQL database shows 'Unknown' breeds to be the number one adopted dog breed across the 5 boroughs - followed by Yorkshire Terrier, Shih Tzu, Chihuahua, Labrador Retriever, and Maltese. 
 
@@ -125,6 +125,9 @@ The first image below is a chart of the Top 15 Dog Names in NYC. Bella comes at 
 ![This is an image](https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Top_3_Dog_Names_per_Borough.png)
 
 Again, our SQL database query supported these findings with Bella being the most popular adopted dog name in the NYC boroughs - Teddy being the 15th most popular. 
+
+<p align="center"><img width="194" alt="image" src="https://user-images.githubusercontent.com/95978097/172288915-e56c5a65-a9a3-48a6-8f39-36df16996a4e.png"></p>
+
 ## 6 Summary and Recommendations 
 
 The following recommendations would be made for opportunities of future research: 
