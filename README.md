@@ -132,6 +132,15 @@ Again, our SQL database query supported these findings with Bella being the most
 
 The following recommendations would be made for opportunities of future research: 
 
-Analyze Dog Licensing Data for the years leading up to the COVID-19 pandemic (2018-2019), as well as 2020.
+- [ ] Analyze Dog Licensing Data for the years leading up to the COVID-19 pandemic (2018-2019), as well as 2020.
+- [ ] Consider analyzing a 5-year range that includes the years of shelter-in-place during the COVID-19 pandemic.
+- [ ] Using the same ACS data, consider pulling census tract data from the 5 boroughs by county as opposed to a lump sum.
+- [ ] Consider running a neural network classification as opposed to supervised machine learning.
 
-Future analysis include analyzing the dataset to see if there is an increase in dog registration over more current years. A larger year span might give us additional insight to see if there is a correlation between dog name, breed, age, registration date, owner income, and borough. 
+Overall, the data that was analyzed for this project derived interesting results related to NYC adopted dog licenses in the 5 boroughs between 2014 and 2016. However, to improve the certainty of our results, we believe the above recommendations should be considered for further research.
+
+While we were originally interested in exploring the predicted surge of dog adoptions during the COVID-19 pandemic, the parent dataset on NYC Open Data did not supply the boroughs associated with the resident (only the zip code) - and time did not permit us to do the additional analysis to research which zip codes belong with each census tract. However, the exploration of what we believe is a tremendous increase in dog adoptions at the beginning and throughout the COVID-19 pandemic. Exploring the latter part of 2021 would also be interesting to analyze as folks began to transition back into a hyrid - or in some cases, 100% in-person work settings.
+
+Additionally, when we first collected the data, we pulled census tract and average household income data as a lumped dataset with all 5 counties that contain each of the 5 boroughs - Bronx, Kings, New York, Richmond, and Queens. Unbenounced to us, each of these 5 counties have repetitive census tract numbers. This made it challenging to determine with certainty, that the household income for each census tract in our data were accurate. 
+
+Lastly, we would also consider running a neural network classification in the future rather than supervised machine learning. We believe that this approach could potentially be better at handling the classification of data. However, this would required that breed names and dog names be classified as 'Other'.
