@@ -96,11 +96,25 @@ The image below derived from our Tableau Story shows that out of the 5 boroughs,
 
 ![This is an image](https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Dog_Population_by_Borough.png)
 
+Results derived from our SQL database support these findings and are depicted in the table below:
+
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/95978097/172275204-3fd8177e-a5db-4c40-8010-722cecab8ecf.png">
+
+Queens and Manhattan surpass the remaining three boroughs with greater than 41,000 dog adoptions between 2014 and 2016. Brooklyn possessed nearly half the amount of adoptions with the Bronx and Staten Island with the least amount of adoptions during this time. 
+
 **Top 5 Dog Breeds per Borough**
 
 Per our analysis, we are able to see below that the top 5 dog breeds per borough are Yorkshire Terriers,  Shih Tzus, Maltese, Labrador Retrievers,  and Chihuahuas. Out of those Yorkshire Terriers are the most popular dogs in every borough besides Staten Island where Shih Tzus are the most owned. 
 
 ![This is an image](https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Top_5_Dog_Breeds.png)
+
+Queries created via our SQL database support this visualization. Totals for the most popular dog breeds adopted within the 5 boroughs of NYC between 2014 and 2016 are shown in the table below: 
+
+<img width="229" alt="image" src="https://user-images.githubusercontent.com/95978097/172276183-5fad8383-a674-4c82-a13e-ea175c3dcaec.png">
+
+Unlike the tableau visualization (that only depict actual breed names), however, the table actually derived from our SQL database shows 'Unknown' breeds to be the number one adopted dog breed across the 5 boroughs - followed by Yorkshire Terrier, Shih Tzu, Chihuahua, Labrador Retriever, and Maltese. 
+
+Noteably, the most popular dog breeds tend to be smaller breeds - with the exception of Labrador Retrievers.
 
 **Top 15 Dog Names and Top 3 Dog Names per Borough**
 
@@ -110,6 +124,7 @@ The first image below is a chart of the Top 15 Dog Names in NYC. Bella comes at 
 
 ![This is an image](https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Top_3_Dog_Names_per_Borough.png)
 
+Again, our SQL database query supported these findings with Bella being the most popular adopted dog name in the NYC boroughs - Teddy being the 15th most popular. 
 ## 6 Summary and Recommendations 
 
 The following recommendations would be made for opportunities of future research: 
