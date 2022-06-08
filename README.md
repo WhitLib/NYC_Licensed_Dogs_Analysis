@@ -128,6 +128,14 @@ Again, our SQL database query supported these findings with Bella being the most
 
 <p align="center"><img width="194" alt="image" src="https://user-images.githubusercontent.com/95978097/172288915-e56c5a65-a9a3-48a6-8f39-36df16996a4e.png"></p>
 
+**Average Household Income by Census Tract**
+
+A majority of dog adoptions within the NYC boroughs belonged to residents within Manhattan, containing 8 of the highest dog adoptions numbers across the city. Most residents resided in census tract 44, with 1070 adoptions and an average household income of $68,379.33, followed by census tract 136 with 564 adoptions and an average household income of $78,764.78. The third most popular census tract was 157 with 447 adoptions and a household income of $78,358.33. The diagram showing the top 15 census tracts is displayed below:
+
+<p align="center"><img width="363" alt="image" src="https://user-images.githubusercontent.com/95978097/172629448-7ec92168-12e4-4c34-9ad7-b7f45831f16a.png"></p>
+
+Interestingly enough, the top census tracts of with the highest numbers of dog adoptions went to residents of the middle-class as opposed to more wealthy folks. 
+
 ## 6 Summary and Recommendations 
 
 The following recommendations would be made for opportunities of future research: 
