@@ -96,7 +96,7 @@ This analysis shows that there is very little correlation between dog name, dog 
 
 The image below derived from our Tableau Story shows that out of the 5 boroughs, Manhattan has the most licensed dogs at exactly 41,327 dogs, following that is Brooklyn at 28,950, then Queens at 24,154, Bronx at 12,328, and last is Staten Island at 10,865. 
 
-<p align="center"><img src="https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Dog_Population_by_Borough.png"></p>
+<p align="center"><img height="650" src="https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Dog_Population_by_Borough.png"></p>
 
 Results derived from our SQL database support these findings and are depicted in the table below:
 
