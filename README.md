@@ -126,7 +126,7 @@ The first image below is a chart of the Top 15 Dog Names in NYC. Bella comes at 
 
 ![This is an image](https://github.com/WhitLib/NYC_Licensed_Dogs_Analysis/blob/main/Images/Top_3_Dog_Names_per_Borough.png)
 
-Again, our SQL database query supported these findings with Bella being the most popular adopted dog name in the NYC boroughs - Teddy being the 15th most popular. 
+Again, our SQL database query supported these findings with Bella being the most popular adopted dog name in the NYC boroughs followed by Max and Charlie.
 
 <p align="center"><img width="194" alt="image" src="https://user-images.githubusercontent.com/95978097/172288915-e56c5a65-a9a3-48a6-8f39-36df16996a4e.png"></p>
 
