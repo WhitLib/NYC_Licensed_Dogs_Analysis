@@ -7,6 +7,8 @@
 
 [Dashboard Storyboard](https://docs.google.com/presentation/d/1ZWdrP-9rqCWh0csM74Ab-9ThCyZBTmxM-Bc7ddR_8fY/edit?usp=sharing) Contains storyboard for the presentation dashboard, including which tools will be used and what interactive elements will be present.
 
+app/ folder contains flask app to run the dashboard. Navigate to this folder and type Flask run in the command line to launch the app.
+
 ### Table of Contents
 - [1 Project Overview](#1-project-overview)
 - [2 Data Sources](#2-data-sources)
